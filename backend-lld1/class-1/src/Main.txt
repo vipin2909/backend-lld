@@ -1,0 +1,21 @@
+Three pillars of OOPS
+Inheritance, Polymorphism, Encapsulation
+
+1 Principle of OOP: Abstraction
+Abstraction: Others don't need to know about the ideas of implementation details
+
+
+Encapsulation:
+1) store the attributes & the behaviours of an entity together
+2) Protected the attributes and behaviours from illegitimate access
+
+
+Class: Blueprint/template of an entity idea
+
+A class is a structure of idea
+-class occupies no space
+-not a real/tangible entity
+-multiple instance can be created of the same class
+
+Objects-> Actual instances of class
+-will occupy memory in app

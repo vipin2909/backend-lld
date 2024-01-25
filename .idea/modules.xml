@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend-lld1/AccessModifiersAndConstructors/AccessModifiersAndConstructors.iml" filepath="$PROJECT_DIR$/backend-lld1/AccessModifiersAndConstructors/AccessModifiersAndConstructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/backend.iml" filepath="$PROJECT_DIR$/.idea/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-lld1/backend-lld1.iml" filepath="$PROJECT_DIR$/backend-lld1/backend-lld1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend-lld1/class-1/class-1.iml" filepath="$PROJECT_DIR$/backend-lld1/class-1/class-1.iml" />
+    </modules>
+  </component>
+</project>
