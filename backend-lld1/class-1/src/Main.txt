@@ -19,3 +19,6 @@ A class is a structure of idea
 
 Objects-> Actual instances of class
 -will occupy memory in app
+
+// Each object is complete seprate
+
