@@ -1,0 +1,51 @@
+We do encapsulation to achieve Abstraction
+
+ACCESS MODIFIERS
+keywords: which are used to restrict access of class members (Attributes + Methods)
+
+1) Public: Anybody can access
+2) Private: Only same class, nobody outside the class can access
+3) Protected: All classes within package + ONLY subclasses outside package
+4) Default: All classes within package.
+
+
+Default Constructor:
+
+if we don't create a constructor of our own a default constructor is created.
+This creates a new obj. of this class & sets the default value of the attributes.
+(Unless Provided).
+
+Copy Constructor
+-We already have an object
+-We want to create new object with all the values same as existing object
+
+Types of data in java -> Primitive & Object
+1) primitive -> char, int, float, boolean
+2) Object -> got stored in heap memory
+
+
+Shallow copy
+Where i have created a copy of object but behind the scenes
+Means passed object as a variable in another object
+
+Ex. Student:
+{
+name,
+age,
+address: {city, state, street}
+}
+
+s1 = {"ABC", 10, {"Chandigarh", "Haryana", "29"}}
+
+s2 = new Student(s1);
+s1.address.city = "Kanina";
+
+so println(s2.address.city) // Kanina
+
+
+DESTRUCTOR: opp of constructor
+will automatically called after the object is no longer needed(i.e once its work is done
+mostly seeing in languages with pointer
+will be called in class when obj does not automatically free up the memory
+In modern languages such as java, once an object is no longer needed,
+garbage collectors automatically gets run and frees up memory
