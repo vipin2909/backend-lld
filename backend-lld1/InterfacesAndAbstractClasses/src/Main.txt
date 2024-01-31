@@ -1,0 +1,52 @@
+A concept is not a real world entity
+it has no attributes or any real specific behaviours
+
+Animal is someone who can run, eat and walk.
+
+if any entity supports a specific set of behaviours, i can categorise the entity as that concept.
+
+INTERFACES: Blueprints of these behaviours
+
+interface Animals {
+    void run();
+    void eat();
+    void walk();
+}
+
+whenever we are implementing any interface then we have to define all its methods inside the
+class which is implementing interface.
+
+System must be loosely coupled not tight coupled
+
+(A tight coupling refers to a situation where two or more software components are closely connected
+and dependent on each other to function properly)
+
+
+Abstract Class:
+any child class of abstract class is forces to implement all abstract methods.
+we can't make an object of abstract class.
+
+
+Why is multiple inheritance not allowed in java ?
+
+Due to Diamond problem
+A
+B extends A
+C extends A
+D extends B, C
+
+https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html#:~:text=An%20abstract%20class%20is%20a,but%20they%20can%20be%20subclassed.&text=When%20an%20abstract%20class%20is,methods%20in%20its%20parent%20class.
+
+
+Java class loader memory:
+which is responsible for storing the classes
+When ever i make variable static it no longer belongs to object it will go to class in loader memory
+and the attribute continues to stay in class memory
+
+
+
+
+
+
+
+
