@@ -1,0 +1,95 @@
+AGENDA Concurrency 1 - Introduction to processes and threads
+Intro processes & Threads
+Single Core & Multi Core
+Concurrency & Parallelism
+Hello World with threads
+
+
+       compile                      download &                          RAM
+Code -----------> executable files ------------> program (hard disk) --------> Process
+                                     install
+    |-----> RAM (fast)
+CPU
+    |------> HD (slow)
+
+*** Process is program in execution & a program can have multiple processes associated with it.
+
+
+PCB -> process control Block
+id
+name
+program counter
+process registers
+stack pointers
+memory pages
+priority
+
+
+
+A process has its own memory address space
+
+
+Threads: Threads are unit of execution within a process
+it is what cpu executes
+
+Threads of a process used shared memory
+
+
+
+Each process can have more than one thread
+but there has to be at least one thread in an active process
+
+Data sharing between threads are more efficient
+
+if data shared and one thread broken down then all memory shared got broken
+Ex. Internet Explorer used threads as tabs & chrome use processes as threads
+
+Advantages/Issues
+1) Inconsistency
+2) Data Corruption
+3) Concurrency Issues
+
+
+Creation of threads have much lower overheads
+
+2.2 GHz Clock speed means 2.2 * 10 ^ 9 instructions / sec
+Scheduler -> To decide which thread to execute now
+Factors
+: Priority
+: Resources
+: Wait time
+
+Round Robin, Preemtive Scheduling algorithm
+
+SINGLE CORE vs MULTI CORE
+It is a unit in cpu that is actually responsible for executing a thread
+
+Quad core: Each core can execute one thread at one time so 4 can execute 4 at a time
+
+i3 dual core
+i5 quad core
+i7 quad core + hyper-threading ( one core can execute more than one thread at a time called hyper threading)
+using some hardware techinique allows the core to execute more than 1 thread at a time
+
+
+How many threads are partially completed ?
+if > 1 threads then concurrency
+
+How many threads are making progress at @instant of time ?
+if > 1 threads then parallelism
+
+CONTEXT SWITCHING
+1) saving state of current thread
+2) load state of new thread (takes time)
+
+BELL CURVE(not less and not more)
+
+Less No. of context switches (Bad UX)
+More No. of context switches (Less Efficient)
+
+bell curve y-axis use happiness x-axis context switches
+
+
+Thread : Implement the Runnable Interface
+Don't think about thread think about task in hand while using threads
+Don't think which threads you will be running
