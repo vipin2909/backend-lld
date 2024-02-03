@@ -1,0 +1,8 @@
+AGENDA
+1) Adder/Subtractor
+2) why synchronization issue happens
+3) what are properties of synchronize solution
+4) Mutex lock synchronized keyword
+
+Adder/Subtractor Example when getting diff values other than zero while adding and subtracting same values
+is synchronization issues
