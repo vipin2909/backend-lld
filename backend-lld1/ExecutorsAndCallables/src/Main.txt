@@ -1,0 +1,12 @@
+AGENDA Executors And Callables: Concurrency 2
+
+Writing multithreaded programs
+Executors and thread pools
+Callables
+
+
+ThreadPool: Collections of threads to efficiently manage worker threads
+
+Reusing threads: saving on thread creation and destruction overheads  (Lead Performance improvement)
+
+ExecutorService: ThreadPools (newThreadPool(), newCachedThreadPool();
