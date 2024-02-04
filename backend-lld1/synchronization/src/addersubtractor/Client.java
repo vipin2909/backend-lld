@@ -1,12 +1,16 @@
 package addersubtractor;
 
 import java.util.concurrent.*;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Client {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Value v = new Value();
-        Adder adder = new Adder(v);
-        Subtractor subtractor = new Subtractor(v);
+        Lock lock = new ReentrantLock();
+
+        Adder adder = new Adder(v, lock);
+        Subtractor subtractor = new Subtractor(v, lock);
 
         ExecutorService es = Executors.newCachedThreadPool();
 
