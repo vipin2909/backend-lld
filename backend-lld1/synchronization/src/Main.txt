@@ -6,3 +6,64 @@ AGENDA
 
 Adder/Subtractor Example when getting diff values other than zero while adding and subtracting same values
 is synchronization issues
+
+this condition is termed as race condition
+
+Critical section: part of code that is actually working with the shared data
+
+Race condition: race condition occurs when two or more threads enter the critical section at same time.
+
+Preemption: Scheduler context switches to another thread in the middle of the execution
+ of the critical section of thread
+
+
+we don't need to block the parallel execution, but we need to avoid the parallel execution of critical section
+
+
+Properties of good solution to synchronization problem
+1) MutualExclusion: only one thread should be executing its critical section at a time
+2) Progress: Overall system should always
+3) Bounded waiting: No thread should have to wait indefinitely
+*There has be an upper bound on waiting time
+4) Busy waiting: No busy waiting
+
+
+Mutex, Mutex Locks  (Mutex: mutual exclusion)
+Mutex lock-> to allow execution of Critical section only one thread at a time
+
+{lock() -> acquire()}     _______   Threading package
+{unlock() -> release()}
+
+synchronized (in java) -> in java each object has an implicit lock
+Ex. synchronized() { ~ lock.lock()
+    critical section
+} ~ lock.unlock()
+
+When using nested synchronized keyword then code is not
+Maintainable/Readable/Extensible
+
+
+Synchronized Method
+Ex. An implicit lock is taken on the object caller of the method
+
+class Calculator {
+   synchronized void add() {
+
+    }
+
+    void subtract() {
+
+    }
+
+    synchronized void multiply() {
+
+    }
+}
+
+
+A = new Cal();
+A.add();
+
+B = new Cal();
+A.add(); // wait as A.add called previously so its locked
+A.multiply() // wait because lock is on object A instead of some method
