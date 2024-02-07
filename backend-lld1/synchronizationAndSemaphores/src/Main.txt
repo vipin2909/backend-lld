@@ -1,0 +1,26 @@
+Synchronization With Semaphores
+AGENDA:
+Producer/Consumer Problem
+Semaphores
+Concurrent Data Structures
+Leetcode conrrency Problems
+https://leetcode.com/problems/print-zero-even-odd/description/
+https://leetcode.com/problems/print-foobar-alternately/description/
+
+
+Semaphores: mutex locks with count
+example suppose we are dealing with store producer consumer
+
+suppose store data has common shared data between customer and producer, so it becomes critical section
+with help of mutex locks and synchronized methods we can handle it but at a time only one producer and one
+consumer can access and update data
+
+so for that case and to optimize further we can use semaphores
+
+Semaphore s = new Semaphore(count);
+
+The idea of semaphore is to allow multiple thread to execute their critical section simultaneously
+means: multiple section to execute their critical section at one time
+
+
+usingh thread safe data structure we
