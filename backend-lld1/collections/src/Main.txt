@@ -1,0 +1,5 @@
+Java Advanced class - 2 Collections
+
+Collections: A set of classes and interfaces that implement commonly used DS
+Container of only 1 type
+// https://www.javatpoint.com/collections-in-java
