@@ -1,0 +1,16 @@
+Single responsibility Principle: A class should have only single reason
+// Journal class ( have to define Persistence class because Journal class can't have multiple responsibilities)
+
+Open closed principle: class should have open for extension but close for modification
+(BetterFilter and AndSpecification (generic) implementation over simple implementation)
+
+Liskov Substitution principle: A base class can be replaced by its child class.
+example: Rectangle and Square implementation.
+
+Interface Segregation principle: Interfaces should be as light as as possible, contains minimum methods and also
+good if interface is functional Interface
+or splitting of interfaces based on behaviours into smaller interfaces
+example Machine interface got broken into Printer, Scanner and Faxing interfaces
+
+YAGNI-> You Ain't going to need it
+
