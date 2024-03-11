@@ -1,0 +1,53 @@
+AGENDA:
+Liskov substitution principle
+Interface segregation principle
+Dependency Inversion Principle
+
+other thing
+Dependency Injection
+
+Problem statement
+1) only birds have the behaviour should have that method
+2) be able to create a list of birds exhibiting a behaviour
+
+ex. class Peacock extends Bird implements Flyable {
+
+}
+
+
+Liskov substitution principle
+
+Object of a parent class should be as is substitutable by the object of child - class without a code change
+
+
+*All the child class should behave as their parents wants them to
+        OR
+*No child class should have a special different meaning
+
+
+
+INTERFACE SEGREGATION PRINCIPLE
+1) Some birds can fly
+2) Some birds can dance
+3) All birds who can fly can also dance and vice-versa
+
+Interfaces should be as light as possible
+Interfaces should have less methods as possible
+Interfaces should ideally have only 1 method (Functional Interface)
+
+
+
+Dependency Inversion Principle
+
+Bird ->
+Crow, Pigeon, Sparrow, Peacock
+
+Crow and peacock fly in exactly same manner
+
+
+class FleBehaviourA {
+    makeFly();
+}
+
+
+
