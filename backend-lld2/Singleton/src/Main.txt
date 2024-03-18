@@ -1,0 +1,13 @@
+For some components it only makes sense to have one in the system
+Ex. Database Repository
+    Object factory
+
+E.g., the constructor call is expensive
+       we only do it once
+       we provide everyone with the same instance
+
+
+Want to prevent anyone creating additional copies
+Need to take care of lazy instantiation and thread safety
+
+A component which is instantiated only once
