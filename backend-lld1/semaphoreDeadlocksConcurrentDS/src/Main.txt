@@ -1,0 +1,55 @@
+SEMAPHORES, DEADLOCKS, CONCURRENT DS
+
+AGENDA:
+Atomic data types
+concurrent DS
+Deadlocks
+
+https://systemsdesign.cloud/Concurrency/DeadlockPrevention
+https://www.developer.com/java/concurrenthashmap-java/#:~:text=It%20works%20by%20dividing%20the,data%20at%20the%20same%20time
+https://stackoverflow.com/questions/1378310/performance-concurrenthashmap-vs-hashmap
+
+
+Atomic data types allow you to run which their non-atomic counterpart don't allow you to do
+
+provides us ways to do operations atomically
+
+int -> AtomicInteger
+float -> AtomicFloat
+etc.
+
+Deadlocks -> Threads end up waiting indefinitely & the system comes to halt
+
+sometimes synchronization cause deadlocks
+3 ways we can handle deadlock:
+Deadlock prevention
+Deadlock recovery
+Deadlock Ignorance -> Most common implementation in OS
+
+
+
+Deadlock prevention/Avoidance
+Take and release locks in ordering
+
+
+Deadlock detection
+1) by keeping timeout
+2) graph cycle detection
+
+
+Deadlock recovery
+1) kill one of the threads
+
+Deadlock Ignorance
+implemented by most OS
+Close not responding APP & restart
+
+
+How to take locks in Prod ?
+1) Always implement lock with caution
+tryLock()
+
+instead of directly acquiring the lock and waiting for infinity this will first check
+if it is possible to acquire a lock or not
+
+
